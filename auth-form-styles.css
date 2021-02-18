@@ -1,0 +1,144 @@
+/*Zalogajcic
+    Copyright (C) 2021, Team "Zalogajcic"
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.*/
+
+/* Classes */
+
+.auth-form
+{
+    align-items: center;
+    background-color: maroon;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 80px;
+    padding-left: 80px;
+    width: 512px;
+}
+
+.auth-input
+{
+    border-style: none;
+    border-radius: 16px;
+    border-width: 4px;
+    border-color: white;
+    height: 42px;
+    margin: 16px;
+    padding-right: 16px; /* Text workspace; add border */
+    padding-left: 16px; /* Same as above, but for the left side */
+    transition: 0.3s; /* Optimal speed; 0.4s is too quick and 0.2s is too slow */
+    width: 256px;
+    outline: none;
+}
+
+.btn
+{
+    background: chocolate;
+    border-radius: 16px;
+    border-style: none;
+    color: white;
+    cursor: pointer;
+    height: 42px;
+    transition: 0.3s;
+    width: 128px;
+}
+
+.checkbox
+{
+    appearance: none;
+    cursor: pointer;
+    margin-right: 16px;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+    border-style: solid;
+    border-color: white;
+    border-width: 4px;
+}
+
+.link
+{
+    color: chocolate;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* IDs */
+
+#bio
+{
+    display: flex;
+    flex-flow: row;
+}
+
+#bio-border
+{
+    border-right-style: dotted;
+    border-right-width: 4px;
+    border-right-color: white;
+    height: 192px;
+    margin: auto;
+}
+
+#terms-input
+{
+    cursor: pointer;
+}
+
+#terms
+{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+}
+
+/* Animations */
+
+.btn:hover
+{
+    width: 192px;
+}
+
+.btn:active
+{
+    background: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.checkbox:active
+{
+    border-color: chocolate;
+    background-color: chocolate;
+    transition: 0.3s;
+}
+
+.link:hover
+{
+    color: white;
+}
+
+.auth-input:hover, .auth-input:focus, .checkbox:hover, .checkbox:checked
+{
+    background-color: chocolate;
+}
