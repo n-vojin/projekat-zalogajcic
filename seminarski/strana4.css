@@ -1,0 +1,136 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+.header{
+	border-bottom: 2px solid #800000;
+}
+.page{
+
+} 
+
+.column{
+	/*border: 1px solid black;*/
+	width:1000px;
+	margin:0px auto;
+}
+.page .column{
+	height:100vh;
+}
+
+#logo-i-social{
+	display: flex;
+}
+
+#logo-holder{
+	flex-grow: 1;
+	margin:10px ;
+
+}
+#social-holder{
+	flex-grow: 1;
+	text-align: right;	
+	margin-top: 30px;
+
+}
+#social-holder a {
+	text-decoration:none;
+}
+#social-holder a img{
+	width:24px;
+	height:24px;
+	margin:5px;
+}
+#main-menu{
+	display: flex;
+}
+#main-menu a{
+	flex-grow: 1;
+	text-align: center;
+	display:block;
+	padding:10px 0;
+	text-decoration:none;
+	color:#800000;
+	transition:400ms;
+}
+#main-menu a:hover,
+#main-menu a.active{
+	background:#800000;
+	color:#ffffff;	
+}
+#pocetna{
+	text-align:center;
+	color:#ffffff;
+	background:url('assets/img/pozadine/l2.jpg');
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+#pocetna h1{
+	font-size:68pt;
+	margin-top:0px;
+	padding-top:calc(50vh - 250px);
+	color:#FFFFFF;
+}
+#o-nama h3
+{
+	color: #E73123;
+}
+
+
+.dark-box{
+	border: 1px solid #ffffff;
+	background-color: #22222270;
+	font-size:44pt;
+	padding:40px;
+	margin-top:150px;
+	
+	font-family: Castellar;
+}
+/*footer*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+  position: auto;
+  
+  bottom: 0; 
+  background-color: #800000;
+  height: 250px;
+  width:100%;
+  overflow: hidden;
+ margin-top:850px;
+}
+
+/*sadrzaj footera*/
+.roditeljF {
+	display: flex;
+}
+.deteF1{
+	flex-grow:1;
+	font-size: 15pt;
+    margin-left:250px  ;
+	margin-top:30px;
+    color: #EEEEEE;
+}
+.deteF2 img{
+	flex-grow:1;
+	margin-top:70px;
+	margin-right:235px;
+	height:110px;
+	width:150px;
+}
+
+.deteF3{
+	flex-grow:1;
+	font-size: 15pt;
+    color: #EEEEEE;
+	margin-right:60px;
+}
+/*kraj footera*/
