@@ -89,49 +89,67 @@ body{
 }
 
 /*footer*/
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-}
-
-#footer {
-  position: auto;
-  
-  bottom: 0; 
-  background-color: #800000;
-  height: 250px;
-  width:100%;
-  overflow: hidden;
- margin-top:850px;
-}
-
-/*sadrzaj footera*/
-.roditeljF {
+.footer {
+	padding-top: 10px;
+	position: relative; 
+	bottom: 0; 
+	background-color: #800000;
+	height: auto;
+	width:100%;
+	margin-top:850px;
 	display: flex;
+	justify-content: center;
 }
-.deteF1{
-	flex-grow:1;
+.footer p{
 	font-size: 15pt;
-    margin-left:250px  ;
-	margin-top:30px;
-    color: #EEEEEE;
-}
-.deteF2 img{
-	flex-grow:1;
-	margin-top:70px;
-	margin-right:235px;
-	height:110px;
-	width:150px;
+	font-family: Times  ;
+	color: #FFFFFF;
+	margin-left:50px;
+	margin-right:50px;
 }
 
-.deteF3{
-	flex-grow:1;
-	font-size: 15pt;
-    color: #EEEEEE;
-	margin-right:60px;
+
+.footer_row{
+	width: 40%;
 }
 /*kraj footera*/
+
+/* O nama */
+#kontakt h2{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	font-size: 25pt;
+	font-family: Times  ;
+	text-align:center;
+}
+
+#kontakt p{
+	margin-top: 50px;
+	margin-bottom: 20px;
+	margin-left:150px;
+	margin-right:150px;
+	text-align:justify;
+	font-size: 15pt;
+	font-family: Times  ;
+}
+
+.kontakt-region{
+	display: grid;
+		grid-template: "adrese  mapa"
+						"mejlovi mapa";
+		grid-template-columns: 500px 1fr;
+	margin-top: 80px;
+}
+
+.kontakt-adrese{
+	grid-area: adrese;
+	padding-bottom:15px;
+	margin-left:250px;
+	font-size: 15pt;
+	font-family: Times  ;
+}
+
+.kontakt-mapa{
+	grid-area: mapa;
+}
+/* O nama - KRAJ*/

@@ -52,6 +52,7 @@ body{
 	text-decoration:none;
 	color:#800000;
 	transition:400ms;
+	font-family: Times  ;
 }
 #main-menu a:hover,
 #main-menu a.active{
@@ -87,7 +88,7 @@ body{
 	font-family: Castellar;
 }
 
-/*		animacija		*/
+/*odbrojavanje - statistika*/
 .roditelj {
 	display: flex;
 }
@@ -98,52 +99,50 @@ body{
     color: #800000;
 }
 
+
 .roditelj2 {
 	display: flex;
+	font-family: Times  ;
+	font-size:15pt;
 }
 
 .dete1{
 	flex-grow:1;
     margin-right: 0px;
-	font-size:13pt;
     color: #800000;
 	padding-bottom: 50px;
 }
 .dete2{
 	flex-grow:1;
     margin-left:30px ;
-	font-size:13pt;
     color: #800000;
 	padding-bottom: 50px;
 }
 .dete3{
 	flex-grow:1;
 	margin-left: 60px;
-	font-size:13pt;
     color: #800000;
 	padding-bottom: 50px;
 }
 .dete4{
 	flex-grow:1;
     margin-right:54px ;
-	font-size:13pt;
 	margin-left: 55px;
     color: #800000;
 	padding-bottom: 50px;
 }
 .dete5{
 	flex-grow:1;
-	font-size:13pt;
     margin-right:35px ;
     color: #800000;
 	padding-bottom: 50px;
 }
 .dete6{
 	flex-grow:1;
-	font-size:13pt;
     color:#800000;
 	padding-bottom: 50px;
 }
+/*	KRAJ	odbrojavanje - statistika*/
 
 .t1{
 	margin:35px 0px;
@@ -166,7 +165,7 @@ body{
 	margin:20px 140px;
 }
 
-.fling-minislide {margin-top:70px;width:1000px; height:800px; overflow:hidden; position:relative; }
+.fling-minislide {margin-top:70px;width:100%; height:70%; overflow:hidden; position:relative; }
 .fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
 
 @keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
@@ -175,50 +174,30 @@ body{
 .fling-minislide img:nth-child(2){animation-delay:10s;}
 .fling-minislide img:nth-child(1){animation-delay:15s;}
 
-#page-container {
-  position: relative;
-  min-height: 100vh;
-}
 
-#content-wrap {
-  padding-bottom: 2.5rem;    /* Footer height */
-}
-
-#footer {
-  position: auto;
-  
-  bottom: 0; 
-  background-color: #800000;
-  height: 250px;
-  width:100%;
-  overflow: hidden;
- margin-top:850px;
-}
-
-/*sadrzaj footera*/
-.roditeljF {
+/*footer*/
+.footer {
+	padding-top: 10px;
+	position: relative; 
+	bottom: 0; 
+	background-color: #800000;
+	height: auto;
+	width:100%;
+	margin-top:850px;
 	display: flex;
+	justify-content: center;
 }
-.deteF1{
-	flex-grow:1;
+.footer p{
 	font-size: 15pt;
-    margin-left:250px  ;
-	margin-top:30px;
-    color: #EEEEEE;
-}
-.deteF2 img{
-	flex-grow:1;
-	margin-top:70px;
-	margin-right:235px;
-	height:110px;
-	width:150px;
+	font-family: Times  ;
+	color: #FFFFFF;
+	margin-left:50px;
+	margin-right:50px;
 }
 
-.deteF3{
-	flex-grow:1;
-	font-size: 15pt;
-    color: #EEEEEE;
-	margin-right:60px;
-}
 
+.footer_row{
+	width: 40%;
+}
+/*	KRAJ footera*/
 
