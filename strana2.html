@@ -2,9 +2,57 @@
 <html>
 
 	<head>
-		<title>Stranica</title>
+		<title>Zalogajčić</title>
 		<meta charset="utf-8" >
 		<link rel="stylesheet" href="strana2.css">
+		<style>
+			.kartice {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			max-width: 80%;
+			margin: auto;
+			text-align: center;
+			font-family: Times;
+			display: flex;
+			grid-template-columns: auto auto auto;
+			flex-wrap: wrap;
+
+			}
+			
+			.cena {
+			color: grey;
+			font-size: 22px;
+			}
+			
+			.kartice button {
+			border: none;
+			outline: 0;
+			padding: 5%;
+			color: white;
+			background-color: #000;
+			text-align: center;
+			cursor: pointer;
+			width: 100%;
+			font-size: 18px;
+			}
+			
+			.kartice button:hover {
+			opacity: 0.7;
+			}
+			
+			.kartica{
+			display: table-cell;
+			max-width: 20%;
+			margin: auto;
+			background: white;
+			padding: 10px;
+			flex-grow: 1;
+			}
+					
+						
+			@media only screen and (max-width: 768px) {
+			.tableWrap, .kartica  { display: block; }
+			.kartica { width: 100%; }}
+		</style>
 	</head>
  
 
@@ -47,6 +95,114 @@
 				</div>
 			</div>
 		</div>
+		
+		
+		<h2 style="text-align:center">Product Card</h2>
+
+		<div class="kartice">
+			<div class="kartica">
+				<img src="assets/img/proizvodi/a1.jpg" alt="Denim Jeans" style="width:100%">
+				<h1>Slani mix (Mix piletine)</h1>
+				<p class="price">1999 din</p>
+				<p>Ovaj slani mix sadrži sledeće:
+				Tahitosi (taquitos) sa piletinom
+				Pohovani pileći zalogaji u susamu
+				Pohovani pileći zalogaji u kikirikiju
+				Hrskava “Crunch” piletina
+				2 umaka
+				UKUPNO: 1kg</p>
+				<p><button>Dodati u korpu</button></p>
+			</div>
+			
+			<div class="kartica">
+				<img src="assets/img/proizvodi/a2.jpg" alt="Denim Jeans" style="width:100%">
+				<h1>Slani mix (Mix peciva)</h1>
+				<p class="price">1199 din</p>
+				<p>Ovaj slani mix sačinjavaju sledeća peciva:
+				koktel pita mix
+				projice
+				koktel štapići
+				carska pita
+				kiflice
+				UKUPNO: 1 kg</p>
+				<p><button>Dodati u korpu</button></p>
+			</div>
+			
+			<div class="kartica">
+				<img src="assets/img/proizvodi/a3.jpg" alt="Denim Jeans" style="width:100%">
+				<h1>Jež ražnići</h1>
+				<p class="price">3599 din</p>
+				<p>Zelena salata,baby mozzarela,crveni i žuti cherry, njeguski prsut,govedji prsut,
+				crne  i zelene masline,feta sir i Gorgonzola</p>
+				<p><button>Dodati u korpu</button></p>
+			</div>
+			
+			<div class="kartica">
+				<img src="assets/img/proizvodi/a4.jpg" alt="Denim Jeans" style="width:100%">
+				<h1>SLANI MIX BR. 7 (MIX PRŠUT-SIREVI)</h1>
+				<p class="price">2299 din</p>
+				<p>Ovaj slani mix sačinjavaju Njeguški pršut i nekoliko vrsta sireva.
+
+				UKUPNO: 700g
+				
+				Slane mikseve preporučujemo za lagano posluženje ili predjelo za 3-5 osoba.
+				
+				Ostale slane mixeve sa cenama možete pogledati</p>
+				<p><button>Dodati u korpu</button></p>
+			</div>
+			
+			<div class="kartica">
+				<img src="assets/img/proizvodi/a4.jpg" alt="Denim Jeans" style="width:100%">
+				<h1>SLANI MIX BR. 7 (MIX PRŠUT-SIREVI)</h1>
+				<p class="price">2299 din</p>
+				<p>Ovaj slani mix sačinjavaju Njeguški pršut i nekoliko vrsta sireva.
+
+				UKUPNO: 700g
+				
+				Slane mikseve preporučujemo za lagano posluženje ili predjelo za 3-5 osoba.
+				
+				Ostale slane mixeve sa cenama možete pogledati</p>
+				<p><button>Dodati u korpu</button></p>
+			</div>
+			
+			<div class="kartica">
+				<img src="assets/img/proizvodi/a5.jpg" alt="Denim Jeans" style="width:100%">
+				<h1>Eklanosa Cup cake</h1>
+				<p class="price">149 din</p>
+				<p>
+				Naručuje se po komadu.</p>
+				<p><button>Dodati u korpu</button></p>
+			</div>
+			
+			<div class="kartica">
+				<img src="assets/img/proizvodi/a6.jpg" alt="Denim Jeans" style="width:100%">
+				<h1>Maša i meda Cup cake </h1>
+				<p class="price">179 din</p>
+				<p>
+				Naručuje se po komadu.</p>
+				<p><button>Dodati u korpu</button></p>
+			</div>
+			
+			<div class="kartica">
+				<img src="assets/img/proizvodi/a7.jpg" alt="Denim Jeans" style="width:100%">
+				<h1>Sunđer Bob fondan torta</h1>
+				<p class="price">1559 din</p>
+				<p></p>
+				<p><button>Dodati u korpu</button></p>
+			</div>
+			
+			<div class="kartica">
+				<img src="assets/img/proizvodi/a8.jpg" alt="Denim Jeans" style="width:100%">
+				<h1>Voćni plato</h1>
+				<p class="price">2399 din</p>
+				<p>Izbor voća na platou zavisi od sezone i trenutne ponude, te su moguća odstupanja od izgleda platoa na slici.</p>
+				<p><button>Dodati u korpu</button></p>
+			</div>
+			
+		
+			
+		</div>
+
 		
 	<footer class="footer">
 				<table>
