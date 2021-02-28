@@ -32,7 +32,7 @@
 
             <h6>Zaboravili ste lozinku? <a class="link" href="#">Kliknite ovde.</a></h6>
             
-            <button type="submit" class="btn">Ulogujte se</button>
+            <button type="submit" class="btn" id="btn-reg">Ulogujte se</button>
         </form>
     </body>
 </html>
