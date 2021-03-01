@@ -93,6 +93,8 @@ body{
 	transition:400ms;
 	font-family: Times;
 	transition:400ms;
+	color: #800000;
+	padding: 10px;
 }
 
 	/*prelazak sa misem preko prodaje, prikazuje se padajuci meni*/
