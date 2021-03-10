@@ -1,0 +1,220 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+.header{
+	border-bottom: 2px solid #800000;
+}
+.page{
+
+} 
+
+.column{
+	/*border: 1px solid black;*/
+	width:1000px;
+	margin:0px auto;
+}
+.page .column{
+	height:100vh;
+}
+
+#logo-i-social{
+	display: flex;
+}
+
+#logo-holder{
+	flex-grow: 1;
+	margin:10px ;
+
+}
+#social-holder{
+	flex-grow: 1;
+	text-align: right;	
+	margin-top: 30px;
+
+}
+#social-holder a {
+	text-decoration:none;
+}
+#social-holder a img{
+	width:24px;
+	height:24px;
+	margin:5px;
+}
+#main-menu{
+	display: flex;
+}
+#main-menu a{
+	flex-grow: 1;
+	text-align: center;
+	display:block;
+	padding:10px 0;
+	text-decoration:none;
+	color:#800000;
+	transition:400ms;
+}
+#main-menu a:hover,
+#main-menu a.active{
+	background:#800000;
+	color:#ffffff;	
+}
+#pocetna{
+	text-align:center;
+	color:#ffffff;
+	/* dve tacke vracaju folder nazad*/
+	background:url('../assets/img/pozadine/l2.jpg');
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+#pocetna h1{
+	font-size:68pt;
+	margin-top:0px;
+	padding-top:calc(50vh - 250px);
+	color:#FFFFFF;
+}
+#o-nama h3
+{
+	color: #E73123;
+}
+
+/* padajuci meni prodaje*/
+	/*Meni*/
+#main-menu .padajuci-meni{
+	flex-grow: 1;
+	text-align: center;
+	display:block;
+	text-decoration:none;
+	transition:400ms;
+	font-family: Times;
+	transition:400ms;
+	padding: 10px 0;
+	color:#800000;
+}
+
+	/*prelazak sa misem preko prodaje, prikazuje se padajuci meni*/
+.padajuci-meni:hover .padajuci-elementi {
+    display: block;
+
+}
+
+	/*prelazak sa misem preko padajuceg menija*/
+#main-menu div:hover,
+#main-menu div.active{
+	background:#ffffff;
+	color: #800000;	
+}
+
+.padajuci-elementi {
+	/*prikaz padajuceg menija na pomeraj misa*/
+    /* display: none;  prikaz padajuceg menija*/
+	 background:#800000;
+     position: absolute;
+	 width: 15%;
+}
+/* KRAJ- padajuci menija */
+
+
+
+.dark-box{
+	border: 1px solid #ffffff;
+	background-color: #22222270;
+	font-size:44pt;
+	padding:40px;
+	margin-top:150px;
+	font-family: Castellar;
+}
+
+
+/*kartice za prodaju hrane*/
+$grid-color: #FFEBEE;
+$blok-color: #EEFF41;
+
+$kartica: 40px;
+
+.blok{
+  display: block;
+  padding: 50px 0;
+  text-align: center;
+  margin-bottom: $kartica;
+}
+
+.grid{
+  width: 90%;
+  max-width: 900px;
+  margin: 60px auto;
+  /*stilizovanje*/
+  padding-top: $kartica;
+}
+
+.kartica{
+  margin-left: ($kartica / 2);
+  margin-right: ($kartica / 2);
+  /*odvajanje kartica da ne budu spojene*/
+  margin-left:30px;
+  margin-right:30px;
+}
+
+.kolona-33{
+  width: 33.3%;
+  float: left;
+}
+.kolona-50{
+  width: 50%;
+  float: left;
+}
+	/*novi red*/
+.clear{
+  clear: both;
+  display: block;
+}
+
+	/*responsive*/
+@media all and (max-width:800px) {
+  .kolona-33{
+    width: 50%;
+  }
+}
+
+@media all and (max-width:600px) {
+  .kolona-33, .kolona-50{
+    width: 100%;
+    float: none;
+  }
+}
+
+.dodaj-u-korpu{
+	background-color: #800000;
+	color:#ffffff;
+	border-color: none;
+	width: 55%;
+	height: 50%;
+}
+/*	KRAJ - kartice za prodaju hrane*/
+
+
+/*footer*/
+.footer {
+	padding-top: 10px;
+	position: relative; 
+	bottom: 0; 
+	background-color: #800000;
+	height: auto;
+	width:100%;
+	margin-top:850px;
+	display: flex;
+	justify-content: center;
+}
+.footer p{
+	font-size: 15pt;
+	font-family: Times  ;
+	color: #FFFFFF;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+
+.footer_row{
+	width: 40%;
+}
+/*kraj footera*/
