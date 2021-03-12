@@ -212,29 +212,52 @@ body{
 .fling-minislide img:nth-child(1){animation-delay:15s;}
 
 
-/*footer*/
-.footer {
+/*footer-main*/
+.footer-main {
 	padding-top: 10px;
 	position: relative; 
 	bottom: 0; 
 	background-color: #800000;
 	height: auto;
 	width:100%;
-	margin-top:850px;
+	margin-top:800px;
 	display: flex;
 	justify-content: center;
 }
-.footer p{
+.footer-main p{
 	font-size: 15pt;
 	font-family: Times  ;
 	color: #FFFFFF;
 	margin-left:50px;
 	margin-right:50px;
 }
-
-
-.footer_row{
+.footer-main_row{
 	width: 40%;
 }
-/*kraj footera*/
+/*kraj footera-main*/
+
+
+/*footer-bottom*/
+.footer-bottom {
+	padding-top: 10px;
+	position: relative; 
+	bottom: 0; 
+	background-color: #800000;
+	height: auto;
+	width:100%;
+	margin-top:bottom;
+	display: flex;
+	justify-content: center;
+}
+.footer-bottom p{
+	font-size: 12pt;
+	font-family: Times  ;
+	color: #FFFFFF;
+	margin-left:50px;
+	margin-right:50px;
+}
+.footer-bottom_row{
+	width: 40%;
+}
+/*kraj footera-bottom*/
 
