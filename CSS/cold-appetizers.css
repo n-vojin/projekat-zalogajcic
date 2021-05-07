@@ -91,6 +91,9 @@ body {
 /*prelazak sa misem preko prodaje, prikazuje se padajuci meni*/
 .padajuci-meni:hover .padajuci-elementi {
   display: block;
+  background: #ffffff;
+  color: #ffffff;
+  padding-top: 10px;
 }
 
 /*prelazak sa misem preko padajuceg menija*/
@@ -118,33 +121,38 @@ body {
   font-family: Castellar;
 }
 
-/*kartice za prodaju hrane*/
+/*kartice za prodaju hrane
 $grid-color: #ffebee;
 $blok-color: #eeff41;
 
 $kartica: 40px;
-
+*/
 .blok {
   display: block;
   padding: 50px 0;
   text-align: center;
+  /*
   margin-bottom: $kartica;
+  */
 }
 
 .grid {
   width: 90%;
   max-width: 900px;
   margin: 60px auto;
-  /*stilizovanje*/
+  /*stilizovanje
   padding-top: $kartica;
+*/
 }
 
 .kartica {
+  /*
   margin-left: ($kartica / 2);
   margin-right: ($kartica / 2);
-  /*odvajanje kartica da ne budu spojene*/
+  /*odvajanje kartica da ne budu spojene
   margin-left: 30px;
   margin-right: 30px;
+  */
 }
 
 .kolona-33 {

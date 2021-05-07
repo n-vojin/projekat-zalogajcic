@@ -1,224 +1,215 @@
-body{
-	margin:0px;
-	padding:0px;
+body {
+  margin: 0px;
+  padding: 0px;
 }
-.header{
-	border-bottom: 2px solid #800000;
+.header {
+  border-bottom: 2px solid #800000;
 }
-.page{
-
-} 
-
-.column{
-	/*border: 1px solid black;*/
-	width:1000px;
-	margin:0px auto;
-}
-.page .column{
-	height:100vh;
+.page {
 }
 
-#logo-i-social{
-	display: flex;
+.column {
+  /*border: 1px solid black;*/
+  width: 1000px;
+  margin: 0px auto;
+}
+.page .column {
+  height: 100vh;
 }
 
-#logo-holder{
-	flex-grow: 1;
-	margin:10px ;
-
+#logo-i-social {
+  display: flex;
 }
-#social-holder{
-	flex-grow: 1;
-	text-align: right;	
-	margin-top: 30px;
 
+#logo-holder {
+  flex-grow: 1;
+  margin: 10px;
+}
+#social-holder {
+  flex-grow: 1;
+  text-align: right;
+  margin-top: 30px;
 }
 #social-holder a {
-	text-decoration:none;
+  text-decoration: none;
 }
-#social-holder a img{
-	width:24px;
-	height:24px;
-	margin:5px;
+#social-holder a img {
+  width: 24px;
+  height: 24px;
+  margin: 5px;
 }
-#main-menu{
-	display: flex;
+#main-menu {
+  display: flex;
 }
-#main-menu a{
-	flex-grow: 1;
-	text-align: center;
-	display:block;
-	padding:10px 0;
-	text-decoration:none;
-	color:#800000;
-	transition:400ms;
+#main-menu a {
+  flex-grow: 1;
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #800000;
+  transition: 400ms;
 }
 #main-menu a:hover,
-#main-menu a.active{
-	background:#800000;
-	color:#ffffff;	
+#main-menu a.active {
+  background: #800000;
+  color: #ffffff;
 }
-#pocetna{
-	text-align:center;
-	color:#ffffff;
-	/* dve tacke vracaju folder nazad*/
-	background:url('../assets/img/pozadine/pozadina1.jpg');
-	background-size:cover;
-	background-attachment:fixed;
-}
-
-#pocetna h1{
-	font-size:68pt;
-	margin-top:0px;
-	padding-top:calc(50vh - 250px);
-	color:#FFFFFF;
+#pocetna {
+  text-align: center;
+  color: #ffffff;
+  /* dve tacke vracaju folder nazad*/
+  background: url("../assets/img/pozadine/pozadina1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-
-.kontakt h2{
-		color:#800000;
+#pocetna h1 {
+  font-size: 68pt;
+  margin-top: 0px;
+  padding-top: calc(50vh - 250px);
+  color: #ffffff;
 }
 
-#o-nama h3
-{
-	color: #E73123;
+.kontakt h2 {
+  color: #800000;
+}
+
+#o-nama h3 {
+  color: #e73123;
 }
 /* padajuci meni prodaje*/
-	/*Prodaja*/
-#main-menu .padajuci-meni{
-	flex-grow: 1;
-	text-align: center;
-	display:block;
-	text-decoration:none;
-	transition:400ms;
-	font-family: Times;
-	transition:400ms;
-	color: #800000;
-	padding: 10px;
+/*Prodaja*/
+#main-menu .padajuci-meni {
+  flex-grow: 1;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  transition: 400ms;
+  font-family: Times;
+  transition: 400ms;
+  color: #800000;
+  padding: 10px;
 }
 
-	/*prelazak sa misem preko prodaje, prikazuje se padajuci meni*/
+/*prelazak sa misem preko prodaje, prikazuje se padajuci meni*/
 .padajuci-meni:hover .padajuci-elementi {
-    display: block;
-	background:#ffffff;
-	color: #fffff;	
+  display: block;
+  background: #ffffff;
+  color: #ffffff;
+  padding-top: 10px;
 }
 
-	/*prelazak sa misem preko padajuceg menija*/
+/*prelazak sa misem preko padajuceg menija*/
 #main-menu div:hover,
-#main-menu div.active{
-	background:#ffffff;
-	color: #800000;	
+#main-menu div.active {
+  background: #ffffff;
+  color: #800000;
 }
 
 .padajuci-elementi {
-	/*prikaz padajuceg menija na pomeraj misa*/
-     display: none;
-     position: absolute;
-	 width: 15%;
+  /*prikaz padajuceg menija na pomeraj misa*/
+  display: none;
+  position: absolute;
+  width: 15%;
 }
 /* KRAJ- padajuci meni */
 
+.dark-box {
+  border: 1px solid #ffffff;
+  background-color: #22222270;
+  font-size: 44pt;
+  padding: 40px;
+  margin-top: 150px;
 
-.dark-box{
-	border: 1px solid #ffffff;
-	background-color: #22222270;
-	font-size:44pt;
-	padding:40px;
-	margin-top:150px;
-	
-	font-family: Castellar;
+  font-family: Castellar;
 }
-
 
 /* O nama */
-#kontakt h2{
-	margin-top: 50px;
-	margin-bottom: 20px;
-	font-size: 25pt;
-	font-family: Times  ;
-	text-align:center;
+#kontakt h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 25pt;
+  font-family: Times;
+  text-align: center;
 }
 
-#kontakt p{
-	margin-top: 50px;
-	margin-bottom: 20px;
-	margin-left:150px;
-	margin-right:150px;
-	text-align:justify;
-	font-size: 15pt;
-	font-family: Times  ;
+#kontakt p {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: justify;
+  font-size: 15pt;
+  font-family: Times;
 }
 
-.kontakt-region{
-	display: grid;
-		grid-template: "adrese  mapa"
-						"mejlovi mapa";
-		grid-template-columns: 500px 1fr;
-	margin-top: 80px;
+.kontakt-region {
+  display: grid;
+  grid-template:
+    "adrese  mapa"
+    "mejlovi mapa";
+  grid-template-columns: 500px 1fr;
+  margin-top: 80px;
 }
 
-.kontakt-adrese{
-	grid-area: adrese;
-	padding-bottom:15px;
-	margin-left:250px;
-	font-size: 15pt;
-	font-family: Times  ;
+.kontakt-adrese {
+  grid-area: adrese;
+  padding-bottom: 15px;
+  margin-left: 250px;
+  font-size: 15pt;
+  font-family: Times;
 }
 
-.kontakt-mapa{
-	grid-area: mapa;
+.kontakt-mapa {
+  grid-area: mapa;
 }
 /* O nama - KRAJ*/
 
-
 /*footer-main*/
 .footer-main {
-	padding-top: 10px;
-	position: relative; 
-	bottom: 0; 
-	background-color: #800000;
-	height: auto;
-	width:100%;
-	margin-top:300px;
-	display: flex;
-	justify-content: center;
+  padding-top: 10px;
+  position: relative;
+  bottom: 0;
+  background-color: #800000;
+  height: auto;
+  width: 100%;
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
 }
-.footer-main p{
-	font-size: 15pt;
-	font-family: Times  ;
-	color: #FFFFFF;
-	margin-left:50px;
-	margin-right:50px;
+.footer-main p {
+  font-size: 15pt;
+  font-family: Times;
+  color: #ffffff;
+  margin-left: 50px;
+  margin-right: 50px;
 }
-.footer-main_row{
-	width: 40%;
+.footer-main_row {
+  width: 40%;
 }
 /*kraj footera-main*/
 
-
 /*footer-bottom*/
 .footer-bottom {
-	padding-top: 10px;
-	position: relative; 
-	bottom: 0; 
-	background-color: #800000;
-	height: auto;
-	width:100%;
-	margin-top:bottom;
-	display: flex;
-	justify-content: center;
+  padding-top: 10px;
+  position: relative;
+  bottom: 0;
+  background-color: #800000;
+  height: auto;
+  width: 100%;
+  margin-top: bottom;
+  display: flex;
+  justify-content: center;
 }
-.footer-bottom p{
-	font-size: 12pt;
-	font-family: Times  ;
-	color: #FFFFFF;
-	margin-left:50px;
-	margin-right:50px;
+.footer-bottom p {
+  font-size: 12pt;
+  font-family: Times;
+  color: #ffffff;
+  margin-left: 50px;
+  margin-right: 50px;
 }
-.footer-bottom_row{
-	width: 40%;
+.footer-bottom_row {
+  width: 40%;
 }
 /*kraj footera-bottom*/
-
-
