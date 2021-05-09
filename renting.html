@@ -1,3 +1,21 @@
+<!--
+    Zalogajcic
+    Copyright (C) 2021  Tim "Zalogajcic"
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>. 
+-->
+
 <!DOCTYPE html>
 
 <html>
@@ -5,6 +23,7 @@
 		<title>Zalogajčić</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/master.css">
+		<link rel="shortcut icon" type="image/png" href="assets/img/aplikacije/zalogajcic.png"/>
 	</head>
 
 	<body>
@@ -46,8 +65,8 @@
 					<div class="submenu">
 						Moj nalog
 						<div class="submenu-items">
-							<a href="#">Registracija</a>
-							<a href="#">Prijava</a>
+							<a href="src/RegistrationForm/register.php">Registracija</a>
+							<a href="src/RegistrationForm/login.php">Prijava</a>
 						</div>
 					</div>
 
@@ -119,35 +138,31 @@
 		</div>
 		<!-- KRAJ	iznajmljivanje-->
 
-		<footer class="footer-main">
-			<table>
-				<tr>
-					<td>
-						<p><b>Kontakt:</b></p>
-						<p>Možete nas kontaktirati na:</p>
-					<td>
-					<td>
-						<img src="assets/img/aplikacije/Zalogajcic2.png" width="120px" height="auto" alt="Loading...">
-					<td>
-					<td>
-						<p><b>Radno vreme:</b></p>
-						<p>Radnim danima i subotom: </p>
-						<p>09:00-20:00</p>
-						<p>Nedeljom:</p>
-						<p>09:00-17:00</p>
-					<td>
-				</tr>
-			</table>
-		</footer>
+		<footer>
+			<div class="footer-contact-info">
+				<div>
+					<p><b>Kontakt:</b></p>
+					<p>Možete nas kontaktirati na:</p>
+				</div>
+				<img src="assets/img/aplikacije/zalogajcic.png" width="120px" height="auto" alt="Loading..."/>
+				<div>
+					<p><b>Radno vreme:</b></p>
+					<p>Radnim danima i subotom: </p>
+					<p>09:00-20:00</p>
+					<p>Nedeljom:</p>
+					<p>09:00-17:00</p>
+				</div>
+			</div>
 
-		<footer class="footer-bottom">
-			<table>
-				<tr>
-					<td>
-						<p>Copyright © 2021 Zalogajčić. Sva prava zadržana. </p>
-					<td>
-				</tr>
-			</table>
+			<div class="footer-bottom">
+				<table>
+					<tr>
+						<td>
+							<p>Copyright © 2021 Zalogajčić. Sva prava zadržana. </p>
+						<td>
+					</tr>
+				</table>
+			</div>
 		</footer>
 	</body>
 </html>

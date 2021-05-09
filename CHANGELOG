@@ -1,0 +1,29 @@
+Zalogajcic v0.2:
+
+    * Added the new pages.
+    * Added registration/login options to the "Moj nalog" submenu.
+    * Added a CHANGELOG file.
+    * Added project and user names to the LICENSE file.
+    * Added LICENSE info at the top of the source files.
+    * Added 3RD-PARTY-LICENSES which has information about the 3rd party libraries and tools used in this project.
+    * Added registration/login forms.
+    * Added a favicon.
+    * Replaced footer table with flex.
+    * Changed footer height to eliminate unnecessary empty space above the footer.
+    * Changed footer background color to white.
+    * Fixed statistics counter alignment and position.
+    * Fixed logo image proportions.
+    * Fixed dark-box alignment and position.
+    * Fixed wrong footer-bottom background color.
+    * Reworked submenu behaviour and appearance.
+    * Replaced hexadecimal representation of the element colors with color names instead.
+    * Merged some CSS files into one for better readability and management.
+    * Minor changes to map.
+    * Major code formatting changes.
+    * Major code cleanup.
+    * Translated some of the files from Serbian to English language.
+    * Some other minor fixes and tweaks.
+
+Zalogajcic v0.1:
+
+    * Initial release.

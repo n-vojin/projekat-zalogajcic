@@ -1,10 +1,13 @@
-function animateValue(obj, start, end, duration) {
+function animateValue(obj, start, end, duration) 
+{
   let startTimestamp = null;
-  const step = (timestamp) => {
+  const step = (timestamp) => 
+  {
     if (!startTimestamp) startTimestamp = timestamp;
     const progress = Math.min((timestamp - startTimestamp) / duration, 1);
     obj.innerHTML = Math.floor(progress * (end - start) + start);
-    if (progress < 1) {
+    if (progress < 1) 
+    {
       window.requestAnimationFrame(step);
     }
   };
@@ -24,7 +27,7 @@ animateValue(obj3, 0, 1500, 4000);
 const obj4 = document.getElementById("animacijaBr4");
 animateValue(obj4, 0, 10, 2000);
 
-const obj5= document.getElementById("animacijaBr5");
+const obj5 = document.getElementById("animacijaBr5");
 animateValue(obj5, 0, 1000, 4000);
 
 const obj6 = document.getElementById("animacijaBr6");

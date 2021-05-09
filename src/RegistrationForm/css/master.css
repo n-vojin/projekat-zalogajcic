@@ -1,0 +1,42 @@
+form
+{
+    font-size: 2vw;
+    background-color: maroon;
+    border-radius: 1vw;
+    padding: 1vw;
+    margin: auto;
+    width: 35vw;
+}
+
+fieldset
+{
+    border-style: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+fieldset input
+{
+    font-size: 2vw;
+    border-width: 0.2vw;
+    border-style: solid;
+    border-radius: 1vw;
+    border-color: chocolate;
+    padding: 1vw;
+    margin: 1vw;
+    width: 20vw;
+    outline: none;
+}
+
+fieldset button
+{
+    border-radius: 1vw;
+    border-style: solid;
+    border-width: 0.2vw;
+    margin: 1vw;
+    height: 8vh;
+    width: 15vw;
+}
