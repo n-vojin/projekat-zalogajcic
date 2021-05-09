@@ -5,19 +5,21 @@ body {
 .header {
   border-bottom: 2px solid #800000;
 }
-.page {
-}
-.column {
-  /*border: 1px solid black;*/
+
+.header .column 
+{
   width: 1000px;
   margin: 0px auto;
 }
-.page .column {
-  height: 100vh;
+
+.page .column 
+{
+  height: 500px;
 }
+
 .dark-box {
   border: 1px solid #ffffff;
-  background-color: #22222270;
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 44pt;
   padding: 40px;
   margin-top: 150px;
@@ -81,42 +83,48 @@ body {
   color: #e73123;
 }
 
-/* padajuci meni prodaje*/
-/*Prodaja*/
-#main-menu .padajuci-meni {
+/* sapeintlion - submenu implementation */
+#main-menu .food-menu
+{
+  cursor: pointer;
   flex-grow: 1;
+  font-family: 'Times New Roman', Times, serif;
+  color: maroon;
   text-align: center;
-  display: block;
-  text-decoration: none;
-  transition: 400ms;
-  font-family: Times;
-  transition: 400ms;
-  color: #800000;
-  padding: 10px;
+  transition: 0.4s;
+  padding: 10px 0 10px 0;
 }
 
-/*prelazak sa misem preko prodaje, prikazuje se padajuci meni*/
-.padajuci-meni:hover .padajuci-elementi {
-  display: block;
-  background: #ffffff;
-  color: #ffffff;
-  padding-top: 10px;
+#main-menu .food-menu:hover
+{
+  background-color: maroon;
+  color: white;
 }
 
-/*prelazak sa misem preko padajuceg menija*/
-#main-menu div:hover,
-#main-menu div.active {
-  background: #ffffff;
-  color: #800000;
-}
-
-.padajuci-elementi {
-  /*prikaz padajuceg menija na pomeraj misa*/
+#main-menu .food-menu .food-menu-items
+{
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: maroon;
+  /* When mouse is not over the element, hide the submenu */
   display: none;
   position: absolute;
-  width: 15%;
+  top: 172px;
+  width: 145px;
 }
-/* KRAJ- padajuci meni */
+
+#main-menu .food-menu:hover .food-menu-items
+{
+  /* Enable the submenu and reveal all of the menu items when mouse is over the parent element */
+  display: block;
+}
+
+#main-menu .food-menu-items a
+{
+  padding: 10px;
+}
+/* Submenu implementation - end */
 
 /*footer-main*/
 .footer-main {

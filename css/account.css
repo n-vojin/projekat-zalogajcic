@@ -1,119 +1,145 @@
-body {
+body 
+{
   margin: 0px;
   padding: 0px;
 }
-.header {
-  border-bottom: 2px solid #800000;
-}
-.page {
+
+.header 
+{
+  border-bottom: 2px solid maroon;
 }
 
-.column {
-  /*border: 1px solid black;*/
+.header .column 
+{
   width: 1000px;
   margin: 0px auto;
 }
-.page .column {
-  height: 100vh;
+
+.page .column 
+{
+  height: 500px;
 }
 
-#logo-i-social {
+#logo-i-social 
+{
   display: flex;
 }
 
-#logo-holder {
+#logo-holder 
+{
   flex-grow: 1;
   margin: 10px;
 }
-#social-holder {
+
+#social-holder 
+{
   flex-grow: 1;
   text-align: right;
   margin-top: 30px;
 }
-#social-holder a {
+
+#social-holder a
+{
   text-decoration: none;
 }
-#social-holder a img {
+
+#social-holder a img 
+{
   width: 24px;
   height: 24px;
   margin: 5px;
 }
-#main-menu {
+#main-menu 
+{
   display: flex;
 }
-#main-menu a {
+
+#main-menu a 
+{
   flex-grow: 1;
   text-align: center;
   display: block;
   padding: 10px 0;
   text-decoration: none;
-  color: #800000;
+  color: maroon;
   transition: 400ms;
 }
-#main-menu a:hover,
-#main-menu a.active {
-  background: #800000;
-  color: #ffffff;
+
+#main-menu a:hover, #main-menu a.active 
+{
+  background: maroon;
+  color: white;
 }
-#pocetna {
+
+#pocetna 
+{
   text-align: center;
-  color: #ffffff;
+  color: white;
   /* dve tacke vracaju folder nazad*/
   background: url("../assets/img/pozadine/pozadina1.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
 
-#pocetna h1 {
+#pocetna h1 
+{
   font-size: 68pt;
   margin-top: 0px;
   padding-top: calc(50vh - 250px);
-  color: #ffffff;
-}
-#o-nama h3 {
-  color: #e73123;
+  color: white;
 }
 
-/* padajuci meni prodaje*/
-/*Prodaja*/
-#main-menu .padajuci-meni {
+#o-nama h3 
+{
+  color: red;
+}
+
+/* sapeintlion - submenu implementation */
+#main-menu .food-menu
+{
+  cursor: pointer;
   flex-grow: 1;
+  font-family: 'Times New Roman', Times, serif;
+  color: maroon;
   text-align: center;
-  display: block;
-  text-decoration: none;
-  transition: 400ms;
-  font-family: Times;
-  transition: 400ms;
-  color: #800000;
-  padding: 10px;
+  transition: 0.4s;
+  padding: 10px 0 10px 0;
 }
 
-/*prelazak sa misem preko prodaje, prikazuje se padajuci meni*/
-.padajuci-meni:hover .padajuci-elementi {
-  display: block;
-  background: #ffffff;
-  color: #ffffff;
-  padding-top: 10px;
+#main-menu .food-menu:hover
+{
+  background-color: maroon;
+  color: white;
 }
 
-/*prelazak sa misem preko padajuceg menija*/
-#main-menu div:hover,
-#main-menu div.active {
-  background: #ffffff;
-  color: #800000;
-}
-
-.padajuci-elementi {
-  /*prikaz padajuceg menija na pomeraj misa*/
+#main-menu .food-menu .food-menu-items
+{
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: maroon;
+  /* When mouse is not over the element, hide the submenu */
   display: none;
   position: absolute;
-  width: 15%;
+  top: 172px;
+  width: 145px;
 }
-/* KRAJ- padajuci meni */
+
+#main-menu .food-menu:hover .food-menu-items
+{
+  /* Enable the submenu and reveal all of the menu items when mouse is over the parent element */
+  display: block;
+}
+
+#main-menu .food-menu-items a
+{
+  padding: 10px;
+}
+/* Submenu implementation - end */
 
 .dark-box {
-  border: 1px solid #ffffff;
-  background-color: #22222270;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 44pt;
   padding: 40px;
   margin-top: 150px;
@@ -125,45 +151,54 @@ body {
   padding-top: 10px;
   position: relative;
   bottom: 0;
-  background-color: #800000;
+  background-color: maroon;
   height: auto;
   width: 100%;
   margin-top: 800px;
   display: flex;
   justify-content: center;
 }
-.footer-main p {
+
+.footer-main p 
+{
   font-size: 15pt;
   font-family: Times;
-  color: #ffffff;
+  color: white;
   margin-left: 50px;
   margin-right: 50px;
 }
-.footer-main_row {
+
+.footer-main_row 
+{
   width: 40%;
 }
 /*kraj footera-main*/
 
 /*footer-bottom*/
-.footer-bottom {
+.footer-bottom 
+{
   padding-top: 10px;
   position: relative;
   bottom: 0;
-  background-color: #800000;
+  background-color: maroon;
   height: auto;
   width: 100%;
   margin-top: bottom;
   display: flex;
   justify-content: center;
 }
-.footer-bottom p {
+
+.footer-bottom p 
+{
   font-size: 12pt;
   font-family: Times;
-  color: #ffffff;
+  color: white;
   margin-left: 50px;
   margin-right: 50px;
 }
-.footer-bottom_row {
+
+.footer-bottom_row 
+{
   width: 40%;
 }
 /*kraj footera-bottom*/

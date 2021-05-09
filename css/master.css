@@ -1,0 +1,459 @@
+body 
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+.header 
+{
+  border-bottom: 2px solid maroon;
+}
+
+.header .column 
+{
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.dark-box-column
+{
+  padding: 50px;
+  text-align: center;
+}
+
+.dark-box
+{
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 44pt;
+  padding: 40px;
+  top: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#logo-i-social 
+{
+  display: flex;
+}
+
+#logo-holder 
+{
+  flex-grow: 1;
+  margin: 10px;
+}
+
+#social-holder 
+{
+  flex-grow: 1;
+  text-align: right;
+  margin-top: 30px;
+}
+
+#social-holder a 
+{
+  text-decoration: none;
+}
+
+#social-holder a img 
+{
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+}
+
+.main-menu
+{
+  display: flex;
+}
+
+.main-menu a 
+{
+  flex-grow: 1;
+  text-align: center;
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: maroon;
+  transition: 400ms;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.main-menu a:hover, .main-menu a.active 
+{
+  background: maroon;
+  color: white;
+}
+
+#pocetna 
+{
+  text-align: center;
+  color: white;
+  background: url("../assets/img/pozadine/pozadina1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#pocetna h1 
+{
+  font-size: 68pt;
+  margin-top: 0px;
+  padding-top: calc(50vh - 250px);
+  color: white;
+}
+
+#o-nama h3 
+{
+  color: red;
+}
+
+/* sapeintlion - menu with  implementation */
+.main-menu .submenu
+{
+  cursor: pointer;
+  flex-grow: 1;
+  font-family: 'Times New Roman', Times, serif;
+  color: maroon;
+  text-align: center;
+  transition: 0.4s;
+  padding: 10px 0 10px 0;
+}
+
+.main-menu .submenu:hover
+{
+  background-color: maroon;
+  color: white;
+}
+
+.main-menu .submenu .submenu-items
+{
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: maroon;
+  /* When mouse is not over the element, hide the submenu */
+  display: none;
+  position: absolute;
+  top: 171px;
+  width: 141px;
+}
+
+.main-menu .submenu:hover .submenu-items
+{
+  /* Enable the submenu and reveal all of the menu items when mouse is over the parent element */
+  display: block;
+}
+
+.main-menu .submenu-items a
+{
+  padding: 10px;
+}
+/* Submenu implementation - end */
+
+/* Statistics counter - start */
+.roditelj 
+{
+  display: flex;
+  margin: 0 50px 0 50px;
+}
+
+.dete 
+{
+  flex-grow: 1;
+  font-size: 3em;
+  margin: 45px;
+  color: maroon;
+}
+
+.roditelj2 
+{
+  display: flex;
+  font-family: Times;
+  font-size: 15pt;
+  margin: 0 50px 0 50px;
+}
+
+.dete1 
+{
+  flex-grow: 1;
+  margin-right: 0px;
+  color: maroon;
+  padding-bottom: 50px;
+}
+
+.dete2 
+{
+  flex-grow: 1;
+  margin-left: 30px;
+  color: maroon;
+  padding-bottom: 50px;
+}
+
+.dete3 
+{
+  flex-grow: 1;
+  margin-left: 60px;
+  color: maroon;
+  padding-bottom: 50px;
+}
+
+.dete4 
+{
+  flex-grow: 1;
+  margin-right: 54px;
+  margin-left: 55px;
+  color: maroon;
+  padding-bottom: 50px;
+}
+
+.dete5 
+{
+  flex-grow: 1;
+  margin-right: 35px;
+  color: maroon;
+  padding-bottom: 50px;
+}
+
+.dete6 
+{
+  flex-grow: 1;
+  color: maroon;
+  padding-bottom: 50px;
+}
+/* Statistics counter - end */
+
+.t1 
+{
+  margin: 35px 0px;
+  color: #800000;
+  font-weight: bold;
+  font-size: 25pt;
+  font-family: Times;
+  margin-left: 30px;
+}
+
+.t2 
+{
+  margin: 20px 100px;
+  font-size: 16pt;
+  font-family: Times;
+}
+
+.t3 
+{
+  font-size: 15pt;
+  font-family: Times;
+  margin: 20px 140px;
+}
+
+.fling-minislide 
+{
+  margin-top: 70px;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  position: relative;
+}
+
+.fling-minislide img 
+{
+  position: absolute;
+  animation: fling-minislide 20s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes fling-minislide 
+{
+  25% 
+  {
+    opacity: 1;
+  }
+  40% 
+  {
+    opacity: 0;
+  }
+}
+
+.fling-minislide img:nth-child(4) 
+{
+  animation-delay: 0s;
+}
+
+.fling-minislide img:nth-child(3) 
+{
+  animation-delay: 5s;
+}
+
+.fling-minislide img:nth-child(2) 
+{
+  animation-delay: 10s;
+}
+
+.fling-minislide img:nth-child(1) 
+{
+  animation-delay: 15s;
+}
+
+/* Footer - start */
+.footer-main 
+{
+  padding-top: 10px;
+  position: relative;
+  bottom: 0;
+  background-color: maroon;
+  height: auto;
+  width: 100%;
+  margin-top: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-main p 
+{
+  font-size: 15pt;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.footer-main_row 
+{
+  width: 40%;
+}
+
+.footer-bottom 
+{
+  padding-top: 10px;
+  position: relative;
+  bottom: 0;
+  background-color: maroon;
+  height: auto;
+  width: 100%;
+  margin-top: bottom;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bottom p 
+{
+  font-size: 12pt;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.footer-bottom_row 
+{
+  width: 40%;
+}
+/* Footer - end */
+
+/* About - start */
+#kontakt h2 
+{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 25pt;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+#kontakt p 
+{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: justify;
+  font-size: 15pt;
+  font-family: Times;
+}
+
+.kontakt-region 
+{
+  display: grid;
+  grid-template:
+    "adrese  mapa"
+    "mejlovi mapa";
+  grid-template-columns: 500px 1fr;
+  margin-top: 80px;
+}
+
+.kontakt-adrese 
+{
+  grid-area: adrese;
+  padding-bottom: 15px;
+  margin-left: 250px;
+  font-size: 15pt;
+  font-family: Times;
+}
+
+.kontakt-mapa 
+{
+  grid-area: mapa;
+}
+/* About - end */
+
+/* Renting - start */
+.blok 
+{
+  display: block;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.grid 
+{
+  width: 90%;
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.kolona-33 
+{
+  width: 33.3%;
+  float: left;
+}
+
+.kolona-50 
+{
+  width: 50%;
+  float: left;
+}
+
+/*novi red*/
+.clear 
+{
+  clear: both;
+  display: block;
+}
+
+/*responsive*/
+@media all and (max-width: 800px) 
+{
+  .kolona-33 
+  {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 600px) 
+{
+  .kolona-33, .kolona-50 
+  {
+    width: 100%;
+    float: none;
+  }
+}
+
+.dodaj-u-korpu {
+  background-color: #800000;
+  color: #ffffff;
+  border-color: none;
+  width: 55%;
+  height: 50%;
+}
+/* Renting - end */
